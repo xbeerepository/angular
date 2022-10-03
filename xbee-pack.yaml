@@ -1,0 +1,11 @@
+schema-version: 1.0
+
+
+dependency: nodejs
+
+provision:
+  - shell: npm install -g @angular/cli
+
+command:
+  ng: ng {{ .args }}
+  npm: npm {{ .args }}
